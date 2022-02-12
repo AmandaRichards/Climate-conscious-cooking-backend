@@ -35,25 +35,25 @@ router.get("/recipes/search/:ingredient", async function (req, res){
     res.json({ "success": true, "payload": byIngredient});
   });
 
-router.get("/recipes/:id", function(req, res) {
+router.get("/recipes/:id", async function(req, res) {
   const id = Number(req.params.id);
   console.log(req.params.id);
-  res.json({ "success": true, "payload": getRecipeByID(id)})
+  res.json({ "success": true, "payload": await getRecipeByID(id)})
  } );
 
- router.get("/recipes/:title", function(req, res) {
+ router.get("/recipes/title/:title", async function(req, res) {
     const title = req.params.title;
     console.log(req.params.title);
-    res.json({ success: true, payload: getRecipeByTitle(title)})
+    res.json({ success: true, payload: await getRecipeByTitle(title)})
    } );
 
-router.post("/recipes", function(req, res){
+router.post("/recipes", async function(req, res){
    const newRecipe = req.body;
    //res.json(createRecipe(newRecipe));
   //  const result = recipes.createRecipe(newRecipe)
   //  es.json({ success: true, payload: result
 
-   res.json({ success: true, payload: createRecipe(newRecipe)})
+   res.json({ success: true, payload: await createRecipe(newRecipe)})
 });
 
 router.put("/recipes/:id", function(req, res){
@@ -63,7 +63,7 @@ router.put("/recipes/:id", function(req, res){
    console.log(recipes);
 });
 
-router.delete("/recipes/:id", function(req, res){
+router.delete("/recipes/:id",  function(req, res){
   const id = Number(req.params.id);
   res.json({ success: true, payload: deleteRecipeByID(id)})
   console.log(recipes);
