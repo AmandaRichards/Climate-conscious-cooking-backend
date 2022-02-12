@@ -35,7 +35,7 @@ export async function getRecipes() {
   
 
 export async  function getRecipeByIngredient(ingredient){
-    let recipes = getRecipes();
+    //let recipes = getRecipes();
     const results = recipes.filter(function(recipe){
         let recipeIngredients = recipe.ingredients
         //console.log(recipeIngredients);

@@ -23,20 +23,22 @@ router.get("/", async function(req, res){
 //   res.sendFile(html);
 // });
 
-router.get("/recipes", function (req, res){
-  const recipes = getRecipes();
-  res.json({ success: true, payload: recipes});
+router.get("/recipes", async function (req, res){
+  const recipes =  await getRecipes();
+  res.json({ "success": true, "payload": recipes});
 });
 
-router.get("/recipes/search/:ingredient", function (req, res){
+router.get("/recipes/search/:ingredient", async function (req, res){
     const ingredient = req.params.ingredient;
-    res.json({ success: true, payload: getRecipeByIngredient(ingredient)});
+    const byIngredient = await getRecipeByIngredient(ingredient)
+    console.log(byIngredient)
+    res.json({ "success": true, "payload": byIngredient});
   });
 
 router.get("/recipes/:id", function(req, res) {
   const id = Number(req.params.id);
   console.log(req.params.id);
-  res.json({ success: true, payload: getRecipeByID(id)})
+  res.json({ "success": true, "payload": getRecipeByID(id)})
  } );
 
  router.get("/recipes/:title", function(req, res) {

@@ -58,4 +58,4 @@ const recipes=[{
 
 }];
 
-export default recipes
+export default recipes;
