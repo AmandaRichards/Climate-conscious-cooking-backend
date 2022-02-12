@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "jade": "^1.11.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.3"
+  },
+  "name": "climate-conscious-cooking-backend",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node ./server/bin/www.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmandaRichards/Climate-conscious-cooking-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmandaRichards/Climate-conscious-cooking-backend/issues"
+  },
+  "homepage": "https://github.com/AmandaRichards/Climate-conscious-cooking-backend#readme"
+}
