@@ -16,7 +16,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "node ./server/bin/www.js",
+    "start": "node ./server/bin/www.js",
     "createTable": "node -r dotenv/config  ./server/db/scripts/createRecipeTable.js", 
     "populateTable": "node -r dotenv/config  ./server/db/scripts/populateRecipeTable.js",
     "deleteTable": "node -r dotenv/config  ./server/db/scripts/deleteRecipeTable.js"
