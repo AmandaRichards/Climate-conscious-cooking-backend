@@ -24,15 +24,16 @@ const recipes=[{
         "50 g Pearl barley",
         "marmite",
         ],
-    method:`1. Chop everything
-    2. Mash kidney beans
-    3. Fry onion and garlic
-    4. Add carrots and seeds
-    5. Add spices
-    6. Add marmite, pearl barley and 200ml. Bring to the boil and cook for 30 mins
-    7. Add lentils, oats, kidney beans, nutritional yeast, mustard
-    8. Put in loaf tin and bake for 25 mins 
-    `,
+    method: [ "Chop everything",
+    "Mash kidney beans",
+     "Fry onion and garlic",
+    "Add carrots and seeds",
+    "Add spices",
+    "Add marmite, pearl barley and 200ml",
+    "Bring to the boil and cook for 30 mins",
+    "Add lentils, oats, kidney beans, nutritional yeast, mustard",
+    "Put in loaf tin and bake for 25 mins", 
+    ],
     image: "https://www.peta.org.uk/wp-content/uploads/2021/01/Vegan-haggis.jpg"
 },
 {id: 2,
