@@ -36,7 +36,7 @@ router.get("/recipes/search/:ingredient", async function (req, res){
   });
 
 
-router.get("/recipes/search/yo/:cusine", async function (req, res){
+router.get("/recipes/search/yo/:cuisine", async function (req, res){
     const cuisine = req.params.cuisine;
     const byCuisine = await getRecipeByCuisine(cuisine)
     console.log(byCuisine)
