@@ -63,6 +63,25 @@ export async  function getRecipeByIngredient(ingredient){
 
 /*recipieIngredients[I].find(function(I) { return i.indexOf(ingredient) >=0})*/
 
+export async  function getRecipeByCuisine(cuisine){
+    //let recipes = getRecipes();
+    const results = recipes.filter(function(recipe){
+        let recipeCuisine = recipe.cuisine
+        //console.log(recipeIngredients);
+        const found = recipeCuisine.find(function(i){
+            return i.indexOf(cuisine) >=0;
+        })
+        console.log(found);
+        /*let found = false;
+        for(let i=0; i<recipeIngredients.length; i++){
+            if(recipeIngredients[i].indexOf(ingredient) >= 0 ){
+                found = true;
+                break;
+            }
+        }*/
+        return !!(found);
+    });
+}
 // CREATE A RECIPE
    export async function createRecipe(recipe) {
    recipes.push(recipe);

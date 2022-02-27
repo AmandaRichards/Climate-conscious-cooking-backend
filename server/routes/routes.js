@@ -1,7 +1,7 @@
 import express from 'express'
 const router = express.Router();
 
-import {createRecipe, getRecipeByIngredient, getRecipeByID, getRecipeByTitle, getRecipes, updateRecipeByID, deleteRecipeByID} from "../models/recipes.js"
+import {createRecipe, getRecipeByIngredient, getRecipeByID, getRecipeByTitle, getRecipes, updateRecipeByID, deleteRecipeByID, getRecipeByCuisine} from "../models/recipes.js"
 
 //const PORT = 3000;
 const app = express();
@@ -33,6 +33,14 @@ router.get("/recipes/search/:ingredient", async function (req, res){
     const byIngredient = await getRecipeByIngredient(ingredient)
     console.log(byIngredient)
     res.json({ "success": true, "payload": byIngredient});
+  });
+
+
+router.get("/recipes/search/yo/:cusine", async function (req, res){
+    const cuisine = req.params.cuisine;
+    const byCuisine = await getRecipeByCuisine(cuisine)
+    console.log(byCuisine)
+    res.json({ "success": true, "payload": byCuisine});
   });
 
 router.get("/recipes/:id", async function(req, res) {
