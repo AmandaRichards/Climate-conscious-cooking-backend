@@ -34,7 +34,7 @@ const recipes=[{
     "Add lentils, oats, kidney beans, nutritional yeast, mustard",
     "Put in loaf tin and bake for 25 mins", 
     ],
-    image: "https://www.peta.org.uk/wp-content/uploads/2021/01/Vegan-haggis.jpg"
+    image: "https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-eu.s3.amazonaws.com%2F193a7b7e-c930-11e9-a1f4-3669401ba76f?fit=scale-down&source=next&width=700"
 },
 {id: 2,
     title: "Ugandan peanut stew",
