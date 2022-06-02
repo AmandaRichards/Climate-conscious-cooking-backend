@@ -52,11 +52,11 @@ const recipes=[{
     "¾ cup natural peanut butter (creamy or smooth)",
     "5 oz. fresh spinach, chopped if not using baby spinach**",
     "lemons"],
-    method: `1.Saute: In a large pot, heat oil or water over medium heat, add the onion, garlic, ginger, and chili peppers and saute for 5 minutes stirring frequently.
+    method: ["1.Saute: In a large pot, heat oil or water over medium heat, add the onion, garlic, ginger, and chili peppers and saute for 5 minutes stirring frequently.",
 
-    2.Boil and simmer: Add the sweet potatoes, tomatoes, spices and liquids, and bring to a boil. Reduce heat and simmer for 15 minutes, or until sweet potatoes are fork tender.
+    "2.Boil and simmer: Add the sweet potatoes, tomatoes, spices and liquids, and bring to a boil. Reduce heat and simmer for 15 minutes, or until sweet potatoes are fork tender.",
     
-    3.Add final ingredients: Turn off heat and stir in the peanut butter, and finish with the spinach and lemon juice. Soup will thicken upon cooling. Season with salt & pepper to taste.`,
+    "3.Add final ingredients: Turn off heat and stir in the peanut butter, and finish with the spinach and lemon juice. Soup will thicken upon cooling. Season with salt & pepper to taste."],
     image: "https://i2.wp.com/simple-veganista.com/wp-content/uploads/2019/08/vegan-west-african-peanut-stew-recipe-3.jpg"
   
 
